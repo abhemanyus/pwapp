@@ -1,7 +1,7 @@
 {
   "display": "standalone",
-  "scope": "/",
-  "start_url": "/index.html",
+  "scope": ".",
+  "start_url": "./index.html",
   "name": "Food Sloth",
   "short_name": "FooSlo",
   "description": "A foody's swiss knife",
