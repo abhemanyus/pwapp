@@ -34,6 +34,8 @@ self.addEventListener('activate', evt => {
 
 self.addEventListener('fetch', evt => {
   evt.respondWith(
-    caches.match(evt.request)
+    caches.match(evt.request).then( cacheRes => {
+      return cacheRes || fetch(evt.request)
+    })
   );
 });
